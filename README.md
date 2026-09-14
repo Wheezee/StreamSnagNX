@@ -54,7 +54,7 @@ Once it started becoming usable, I figured I might as well share it in case some
 
 ## See it
 
-[App tour video](docs/media/streamsnagnx-tour.mp4) — search → download → library.
+![App tour video](docs/media/streamsnagnx-tour.mp4)
 
 ![Overlay player](docs/media/overlay-player.jpg)
 
