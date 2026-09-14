@@ -1,0 +1,74 @@
+# StreamSnagNX — build outputs are regenerable, source is king.
+# (Dist flags/toolbox.json stay tracked; built binaries don't.)
+
+# ---- devkitPro / libnx build trees ----
+build/
+sys-snag/build/
+sys-snag/tools/snag-ctl/build/
+overlay/build/
+overlay/build-float/
+
+# ---- Build artifacts (anywhere: source dirs, dist/, repo root) ----
+*.o
+*.d
+*.elf
+*.nro
+*.nso
+*.nsp
+*.npdm
+*.nacp
+*.ovl
+*.map
+*.a
+*.pfs0
+*.nca
+
+# ---- CMake ----
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+_CPack_Packages/
+
+# ---- Runtime junk (lives on SD, never in repo) ----
+*.log
+*.tmp
+
+# ---- Archives / release bundles (ship via GitHub Releases, not git) ----
+*.zip
+*.7z
+*.rar
+*.tar.gz
+
+# ---- Agent workspace memory (local only, never ship) ----
+AGENTS.md
+
+# ---- Internal planning docs (local only, never ship) ----
+OVERLAY_ECOSYSTEM_PLAN.md
+
+# ---- Dev handover notes (local only, never ship) ----
+sys-snag/help/
+sys-snag/help-float/
+
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Python helpers ----
+__pycache__/
+*.py[cod]
+
+# ---- Local research & snapshots (never ship) ----
+research/
+backups/
+ssnx-probe/
